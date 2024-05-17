@@ -1,70 +1,95 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# デジタル時計アプリ
 
-## Available Scripts
+このアプリは、異なるタイムゾーンとテーマを持つ複数の時計を追加できるReactベースのデジタル時計アプリケーションです。アプリはレスポンシブデザインを採用しており、デスクトップとモバイルデバイスの両方で快適に動作します。
 
-In the project directory, you can run:
+## 特徴
 
-### `npm start`
+- 異なるタイムゾーンを持つ複数の時計を追加可能
+- 各時計に対して異なるテーマを切り替え可能
+- デスクトップおよびモバイルデバイスに対応したレスポンシブデザイン
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 使用技術
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Styled-components
+- Moment-timezone
 
-### `npm test`
+## はじめに
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ローカル環境でアプリを実行するための手順は以下の通りです：
 
-### `npm run build`
+### 前提条件
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+お使いのマシンにNode.jsとnpmがインストールされていることを確認してください。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### インストール
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. リポジトリをクローンします：
+   ```sh
+   git clone https://github.com/your-username/digital-clock-app.git
+   ```
+2. プロジェクトディレクトリに移動します：
+   ```sh
+   cd digital-clock-app
+   ```
+3. 依存関係をインストールします：
+   ```sh
+   npm install
+   ```
 
-### `npm run eject`
+### 使用方法
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. 開発サーバーを起動します：
+   ```sh
+   npm start
+   ```
+2. ブラウザを開き、`http://localhost:3000`にアクセスします。
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## プロジェクト構成
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+digital-clock-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── AddClockButton.js
+│   │   ├── DigitalClock.js
+│   │   └── App.js
+│   ├── index.js
+│   └── index.css
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## コンポーネント
 
-## Learn More
+### `App.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+テーマを設定し、時計の状態を管理する主要なコンポーネントです。新しい時計を追加し、テーマを変更するための関数を含みます。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `DigitalClock.js`
 
-### Code Splitting
+指定されたタイムゾーンとテーマで時計を表示するコンポーネントです。UTC時刻とタイムゾーンのオフセットに基づいて毎秒時間を更新します。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `AddClockButton.js`
 
-### Analyzing the Bundle Size
+新しい時計を追加するためのユーザーインターフェースを提供するコンポーネントです。ユーザーはタイムゾーンとテーマを選択できます。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ライセンス
 
-### Making a Progressive Web App
+このプロジェクトはMITライセンスの下で配布されています。詳細は`LICENSE`ファイルをご覧ください。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 謝辞
 
-### Advanced Configuration
+- [React](https://reactjs.org/)
+- [Styled-components](https://styled-components.com/)
+- [Moment-timezone](https://momentjs.com/timezone/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 連絡先
 
-### Deployment
+あなたの名前 - [your-email@example.com](mailto:your-email@example.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+プロジェクトリンク: [https://github.com/your-username/digital-clock-app](https://github.com/your-username/digital-clock-app)
