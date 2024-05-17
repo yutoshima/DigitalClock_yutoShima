@@ -42,7 +42,7 @@
 
 1. 開発サーバーを起動します：
    ```sh
-   npm start
+   npm start app
    ```
 2. ブラウザを開き、`http://localhost:3000`にアクセスします。
 
@@ -78,10 +78,6 @@ digital-clock-app/
 
 新しい時計を追加するためのユーザーインターフェースを提供するコンポーネントです。ユーザーはタイムゾーンとテーマを選択できます。
 
-## ライセンス
-
-このプロジェクトはMITライセンスの下で配布されています。詳細は`LICENSE`ファイルをご覧ください。
-
 ## 謝辞
 
 - [React](https://reactjs.org/)
@@ -90,6 +86,6 @@ digital-clock-app/
 
 ## 連絡先
 
-あなたの名前 - [your-email@example.com](mailto:your-email@example.com)
+あなたの名前 - [yutoshima1234@gmail.com](yutoshima1234@gmail.com)
 
-プロジェクトリンク: [https://github.com/your-username/digital-clock-app](https://github.com/your-username/digital-clock-app)
+プロジェクトリンク: [https://github.com/yutoshima/DigitalClock_yutoShima.git](https://github.com/yutoshima/DigitalClock_yutoShima.git)
